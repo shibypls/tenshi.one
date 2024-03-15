@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>. . ᶻ 𝗓 𐰁</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>. . ᶻ 𝗓 𐰁</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <body>
-        <div id=wrapper>
-            <header>
-                <div id="externallinks">
-                    <nav>
+<body>
+    <div id=wrapper>
+        <header>
+            <div id="externallinks">
+                <nav>
+                    <ul>
+                        {% for name, link in links %}
+                        <li>
+                            <a href="https://bsky.app/profile/tenshi.one">bluesky</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>         
+            <div id=headerflex>
+                <div id=headers>
+                    <a href="/" id=TheTitle><h1>welcome to tenshi.one :3</h1></a>
+                    <nav id=articles>
                         <ul>
-                            {% for name, link in links %}
+                            {% for name, link in articles %}
                             <li>
-                                <a href="https://bsky.app/profile/tenshi.one">bluesky</a>
+                                <a href="{{link}}">{{name}}</a>
                             </li>
                             {% endfor %}
                         </ul>
                     </nav>
-                </div>         
-                <div id=headerflex>
-                    <div id=headers>
-                        <a href="/" id=TheTitle><h1>welcome to tenshi.one :3</h1></a>
-                        <nav id=articles>
-                            <ul>
-                                {% for name, link in articles %}
-                                <li>
-                                    <a href="{{link}}">{{name}}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </nav>
-                    </div>
-                    <a id=sidebarImage href="/">
-                        <img alt="{{image[0]}}" src="{{image[1]}}">
-                    </a>         
                 </div>
-            </header>
+                <a id=sidebarImage href="/">
+                    <img alt="{{image[0]}}" src="{{image[1]}}">
+                </a>         
+            </div>
+        </header>
 
 
 </html>
