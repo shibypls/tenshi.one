@@ -26,7 +26,6 @@
                         <li>
                             <a href="https://www.tumblr.com/angelmuttt">tumblr</a>
                         </li>
-                        {% endfor %}
                     </ul>
                 </nav>
             </div>         
@@ -35,11 +34,9 @@
                     <a href="/" id=TheTitle><h1>welcome to tenshi.one :3</h1></a>
                     <nav id=articles>
                         <ul>
-                            {% for name, link in articles %}
                             <li>
                                 <a href="{{link}}">{{name}}</a>
                             </li>
-                            {% endfor %}
                         </ul>
                     </nav>
                 </div>
@@ -48,28 +45,28 @@
                 </a>         
             </div>
         </header>
-    </div>
-    <div id="content">
-        <aside>
-            <section id="recent_articles">
-                <h4>recent articles:</h4>
-                <ul>
-                    <li>
-                        ::marker
-                        <a href="/temp">about me</a>
-                    </li>
-                </ul>
-            </section>
-        </aside>
-        <h2 id="hi_owo">
-            hi owo
-            <a class="header_linker" href="#hi_owo">[#]</a>
-        </h2>
-        <p>
-            hi im evie! i dont know what to put here yet but eventually there'll be more information :3 mwah
-            <a href="/temp">more about me</a>
-            .
-        </p>
-    </div>
+        </div>
+        <div id="content">
+            <aside>
+                <section id="recent_articles">
+                    <h4>recent articles:</h4>
+                    <ul>
+                        <li>
+                            ::marker
+                            <a href="/temp">about me</a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <h2 id="hi_owo">
+                hi owo
+                <a class="header_linker" href="#hi_owo">[#]</a>
+            </h2>
+            <p>
+                hi im evie! i dont know what to put here yet but eventually there'll be more information :3 mwah
+                <a href="/temp">more about me</a>
+                .
+            </p>
+        </div>
     </body>
 </html>
